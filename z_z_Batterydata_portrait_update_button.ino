@@ -6,7 +6,7 @@
 BluetoothSerial ESP_BT; //Class name
 
 struct can_frame canMsg;
-MCP2515 mcp2515(5);
+MCP2515 mcp2515(5);//digital pin for Slave Select in ESP32
 //
 int frame_01 = 0x9F10FA01;
 int frame_11 = 0x9F11FA01;
