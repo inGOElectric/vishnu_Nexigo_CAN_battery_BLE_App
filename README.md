@@ -2,8 +2,10 @@ This app will show the Battery Data of Nexigo battery pack with the CAN Matrix-B
 
 
 You need to use 2 ESP32's since the battery is in command mode.
-  ->One device will send a CAN command to battery such a way that battery can send the CAN frames.
-  ->Other is used the read the CAN frames to do byte operations and write the data to the bluetooth such a way that a Mobile can be paired to receive the data. 
+
+->One device will send a CAN command to battery such a way that battery can send the CAN frames.
+
+->Other is used the read the CAN frames to do byte operations and write the data to the bluetooth such a way that a Mobile can be paired to receive the data. 
 
 Upload CAN_write_ithin_sucessfullllllllllllll.ino in one device(sending the command).
 Upload z_z_Batterydata_portrait_update_button.ino in other device(Capturing the battery response, do byte operations and write the data to bluetooth.
