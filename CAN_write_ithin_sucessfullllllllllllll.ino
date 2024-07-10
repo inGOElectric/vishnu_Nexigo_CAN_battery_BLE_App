@@ -1,7 +1,7 @@
 #include <SPI.h>          //Library for using SPI Communication 
 #include <mcp2515.h>      //Library for using CAN Communication (https://github.com/autowp/arduino-mcp2515/)
 struct can_frame canMsg;
-MCP2515 mcp2515(5);
+MCP2515 mcp2515(5);//digital pin for Slave Select in ESP32
 int id = 0x800001FA;
 int AA = 0xAA;
 void setup()
